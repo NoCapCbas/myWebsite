@@ -1,0 +1,154 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Damon's Portfolio</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <!-- <link rel="stylesheet" href="scribbler-global.css"> -->
+      <!-- <link rel="stylesheet" href="scribbler-landing.css"> -->
+      <link rel="author" href="humans.txt">
+      <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static '/css/global.css' %}">
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+
+        <li class="menu__item"><a href="https://www.linkedin.com/in/damon-diaz-765293172/" class="link link--dark"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li class="menu__item"><a href="https://github.com/NoCapCbas" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Hi I'm Damon</h1>
+      <p class="hero__description"> <span class="keybinding__label">Software Developer</span> </p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo"> ~ $ </code>
+
+      </pre>
+    </div>
+
+
+
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Installation</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">mac</li>
+            <li class="tab" data-tab="linux">linux</li>
+            <li class="tab" data-tab="win">win</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$  brew install portfolio projects</code>
+            <code class="tab__pane linux">$  apt-get install portfolio projects</code>
+            <code class="tab__pane win">$  gem install portfolio projects</code>
+          </pre>
+        </div>
+      </div>
+      <div class="feature">
+
+
+        <div class="feature__item">
+          <h3 class="section__title"><span class="keybinding__label"><a href="https://task-to-do-application.herokuapp.com">To Do App</a></span></h3>
+          <br>
+          <a href="https://task-to-do-application.herokuapp.com"><img src="{% static 'images/ToDoApp.jpg' %}" alt="" width="300" height="200"></a>
+          <p>
+            To Do Application that lists uncompleted tasks and marks them if they are completed.
+            Also has update and delete task functionality. Website application built using Django framework.
+            Deployed on Heroku using git and github.
+          </p>
+
+        </div>
+
+
+        <div class="feature__item">
+          <h3 class="section__title"><span class="keybinding__label"><a href="https://maintenance-calorie-calc.herokuapp.com/">Maintenance Calorie Calculator</a></span> </h3>
+          <br>
+          <a href="https://task-to-do-application.herokuapp.com"><img src="{% static 'images/CalorieCalc.jpg' %}" alt="" width="300" height="200"></a>
+          <p>
+            Calculates maintenance calories from user input such as their height, weight, age, gender, and
+            activity level. Website application built using the Flask framework. Deployed on Heroku using git and github.
+          </p>
+
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title"><span class="keybinding__label"><a>Inventory Management System GUI</a></span>  </h3>
+          <br>
+          <img src="{% static 'images/InventoryGUI.jpg' %}" alt="" width="300" height="200">
+          <p>
+            Inventory System built for small manufacturing organization that has outgrown their current inventory system.
+            Designed to meet specific business requirements such as the ability to add, modify, and delete inventory.
+            Built using IntelliJ IDE, Scene Builder, and JavaFX. If you would like to see this project feel free to contact me
+            and I can provide a zip file.
+          </p>
+        </div>
+
+        <div class="feature__item">
+          <h3 class="section__title"><span class="keybinding__label"><a href="https://city-weather-conditions-app.herokuapp.com">Weather App</a></span>  </h3>
+          <br>
+          <a href="https://city-weather-conditions-app.herokuapp.com"><img src="{% static 'images/WeatherApp.png' %}" alt="" width="300" height="200"></a>
+          <p>
+            Weather Application that uses the Open Weather API to get the live temperatures and weather description
+            for cities. User inputs what city they would like to get live weather conditions from. Website Application
+            built using Django framework. Deployed on Heroku using git and github.
+          </p>
+        </div>
+
+      </div>
+      <div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">What I Know</h3>
+          <li><span class="keybinding__label">Python</span><span class="keybinding__label">Django</span><span class="keybinding__label">Flask</span></li>
+          <li><span class="keybinding__label">HTML</span><span class="keybinding__label">CSS</span></li>
+          <li><span class="keybinding__label">Java</span></li>
+          <li><span class="keybinding__label">mySQL</span></li>
+        </ul>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Technical Skills</h3>
+          <li><span class="keybinding__label">Data Structures</span> </li>
+          <li><span class="keybinding__label">Functional Programming</span> <span class="keybinding__label">Git/Version Control</span> </li>
+          <li><span class="keybinding__label">Object Oriented Design</span> </li>
+          <li><span class="keybinding__label">Sorting Algorithms</span> </li>
+        </ul>
+      </div>
+
+      <div class="keybinding">
+        <ul class="keybinding__detail2">
+          <h3 class="keybinding__title">How I Learn/About Me</h3>
+          <li>
+            I enjoy reverse engineering projects and adding features that previously were not part of the project.
+            I also enjoy breaking code to find out how and why it works the way it does. Currently I am working on adding
+            more projects to my portfolio as I seek a position where I can learn from others who are more experienced than me. </li>
+
+        </ul>
+
+      </div>
+
+      <div class="callout">
+        <p>This app was created using the Django Framework. The languages that you see on this
+          app are Python, HTML, CSS, and some Javascript. By using a free template I saved myself a
+          lot of time. Instead of creating the HTML and CSS from scratch I was able to edit the template
+          to the way I wanted it to look like.</p>
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!--   <script src="scribbler.js"></script>   -->
+    <script type="text/javascript" src="{% static 'js/scribbler.js'%}">
+
+    </script>
+  </body>
+</html>
